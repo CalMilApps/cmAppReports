@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::login');
+$routes->get('https://cmappreports.azurewebsites.net/', 'Home::login');
 $routes->get('/dashboard', 'Home::dashboard', ['filter' => 'auth_login']);
 $routes->get('/register', 'Home::register');
 $routes->post('/register_ac', 'Home::register_ac');
